@@ -38,7 +38,7 @@ header {
     gap: 0px; /* Spaces text from logo */
     height: 99px; /* Height of gray box */
     background-color: #262626; /*Box color */
-    padding: 0; /* Add horizontal padding */
+    padding: 0;
 }
 
 .logo img {
@@ -99,10 +99,6 @@ nav ul li a:hover {
     margin: 10px auto; /* Top, Right, Bottom, Left */
     color: white;
     background-color: #3a3a3a;
-}
-
-#main p {
-    text-indent: 1.5em;
 }
 
 figure{
