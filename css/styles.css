@@ -20,6 +20,8 @@ body {
 	background-color: #2a2a2e;
 }
 
+/* Full Page */
+
 #container {
     width: 930px;
     border-width: 1px;
@@ -27,46 +29,76 @@ body {
     background-color: #171717;
 }
 
+/* Header */
+
 header {
-    height: 100px;
-    width: 300px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    text-align: left;
-    background-color: #262626;
+    width: 300px; /* Width of gray rectangle */
+    display: flex;
+    align-items: center; /* Align logo and text */
+    gap: 0px; /* Spaces text from logo */
+    height: 99px; /* Height of gray box */
+    background-color: #262626; /*Box color */
+    padding: 0; /* Add horizontal padding */
+}
+
+.logo img {
+    margin-top: 4px;
+    width: 100px; /* Logo width */
+    height: 100px; /* Logo height */
+}
+
+.crash {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 39.3px 53.6px; /* Top/bottom right/left */
+    text-decoration: none;
+}
+
+.crash:hover {
+    background-color: #0d0d0d;
 }
 
 nav {
-    width: 200px;
-    margin: 0 5px 1000 5px; 
-    padding: 0 ;
-    float: right;
-    text-align: center;
+    margin: 1px; /* Nav left indent from logo flex */
+    padding: 0;
 }
 
 nav ul {
-    font-weight: bold;
+    display: flex;
+    gap: 3px; /* Space between nav buttons */
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
-    padding: 5px;
+    padding: 39.5px 55px; /* Height x Width - Adjust padding for clickable area */
     color: gray;
     text-decoration: none;
-    display:block;
+    display: block;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
     background: gray;
     color: white;
 }
+/* Main Area */
+
+
+#wrapper {
+    width: 930px;
+    margin-bottom: 10px;
+}
 
 #main {
-    width: 500px;
-    padding: 75px 20px;
-    float: left;
-    color: white;    
-    background-image: url(images/logo.jpg);
+    text-align: center;
+    width: 850px;
+    padding: 200px 15px; /* Main height x width */
+    margin: 10px auto; /* Top, Right, Bottom, Left */
+    color: white;
+    background-color: #3a3a3a;
 }
 
 #main p {
@@ -94,9 +126,17 @@ h3 {
     padding-top: 0.5em;
 }
 
+h4 {
+    color: white;
+    text-indent: 30px;
+    font-size: 2em;
+}
+
+/* footer */
+
 footer {
     width: 910px;
-    margin: 1px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 10px;
     background-color: #0d0d0d;
     clear: both;
@@ -105,13 +145,6 @@ footer {
     text-align: center;
     border-top: 1px solid #888888;
 }
-
-#wrapper {
-    width: 928px;
-    margin-bottom: 10px;
-}
-
-/* navigation for footer */
 
 footer a:link {
     color: white;
