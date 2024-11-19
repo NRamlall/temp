@@ -43,8 +43,8 @@ header {
 
 .logo img {
     margin-top: 4px;
-    width: 100px; /* Logo width */
-    height: 100px; /* Logo height */
+    width: 99.5px; /* Logo width */
+    height: 99.5px; /* Logo height */
 }
 
 .crash {
@@ -60,13 +60,14 @@ header {
 }
 
 nav {
-    margin: 1px; /* Nav left indent from logo flex */
+    margin: 0px; /* Nav left indent from logo flex */
     padding: 0;
+    background-color: hsl(0, 0%, 7%);
 }
 
 nav ul {
     display: flex;
-    gap: 3px; /* Space between nav buttons */
+    gap: 3.3px; /* Space between nav buttons */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -155,4 +156,60 @@ footer a:visited {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Forms */
+
+div.formRow {
+    display: flex;
+    color: white;
+    flex-flow: row wrap;
+    margin: 20px 10%;
+}
+ 
+div.formRow > * {
+    flex: 1 1 50px;
+}
+
+#custInfo {
+    margin: 10%;
+    width: 740px;
+}
+ 
+form#survey {
+    display: flex;
+    flex-flow: row wrap;
+}
+ 
+form#survey > fieldset {
+    background-color: rgb(241, 232, 181);
+    border-radius: 20px;
+    flex: 1 1 250px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+}
+ 
+ /* Legend Styles */
+ 
+legend {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 5px;
+}
+ 
+ /* Text Area Styles */
+
+ 
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+}
+ 
+ /* Form Button Styles */
+ 
+div#buttons {
+    text-align: center;
+    width: 100%;
 }
