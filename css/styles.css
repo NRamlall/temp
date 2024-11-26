@@ -5,9 +5,10 @@
    Author: Nick Ramlall   
    Date:   11/11/24
    
-  
-
 */
+
+
+/* -------------- Universal Code --------------  */
 
 * {
     margin: 0; 
@@ -20,22 +21,23 @@ body {
 	background-color: #2a2a2e;
 }
 
+
 /* Full Page */
 
 #container {
-    width: 930px;
+    width: 1080px;
     border-width: 1px;
     margin: 70px auto;
     background-color: #171717;
 }
 
+
 /* Header */
 
 header {
-    width: 300px; /* Width of gray rectangle */
+    width: 299px; /* Width of gray rectangle */
     display: flex;
     align-items: center; /* Align logo and text */
-    gap: 0px; /* Spaces text from logo */
     height: 99px; /* Height of gray box */
     background-color: #262626; /*Box color */
     padding: 0;
@@ -59,68 +61,92 @@ header {
     background-color: #0d0d0d;
 }
 
+
+/* Navigation */
+
 nav {
-    margin: 0px; /* Nav left indent from logo flex */
-    padding: 0;
     background-color: hsl(0, 0%, 7%);
 }
 
 nav ul {
+    width: 780px;
+    height: 100px;
     display: flex;
-    gap: 3.3px; /* Space between nav buttons */
+    justify-content: space-evenly;
+    align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li a {
-    padding: 39.5px 55px; /* Height x Width - Adjust padding for clickable area */
-    color: gray;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
+    padding: 20px 40px; /* Height x Width - Adjust padding for clickable area */
+    background-color: #262626;
+    color: white; /* Color of text in nav */
+    text-decoration: none; /* Removes bullet points */
+    display: flex;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
     background: gray;
-    color: white;
+    color: black;
 }
+
+
 /* Main Area */
 
-
 #wrapper {
-    width: 930px;
-    margin-bottom: 10px;
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 #main {
-    text-align: center;
-    width: 850px;
-    padding: 200px 15px; /* Main height x width */
-    margin: 10px auto; /* Top, Right, Bottom, Left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 950px;
+    height: auto;
+    padding: 200px 0; /* Main height x width */
+    margin: 25px 64.5px; /* Top, Right, Bottom, Left */
     color: white;
     background-color: #3a3a3a;
 }
 
-figure{
-    padding-top: 10px;
-    text-align: center;
+p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: italic;
 }
 
-figcaption {
-    font-style: italic;
+p2 {
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 h2 {
     font-size: 1.4em;
+    font-family: "Quicksand", sans-serif;
     text-align: center;
+    color: white;
     padding-bottom: 0.5em;
+}
+
+#custInfo > h2 {
+    font-size: 1em;
+    text-align: left;
+    text-decoration: underline;
+    padding: 10px;
 }
 
 h3 {
     text-align: center;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding: 50px 0 10px 0;
+    color: white;
+    text-decoration: underline;
+    font-family: "Quicksand", sans-serif;
 }
 
 h4 {
@@ -129,11 +155,13 @@ h4 {
     font-size: 2em;
 }
 
-/* footer */
+
+/* Footer */
 
 footer {
-    width: 910px;
-    margin: 10px 0 0 0;
+    display: flex;
+    width: 1060px;
+    justify-content: center;
     padding: 10px;
     background-color: #0d0d0d;
     clear: both;
@@ -158,13 +186,18 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /* Forms */
+
+label, legend {
+    font-family: "Quicksand", sans-serif;
+}
 
 div.formRow {
     display: flex;
     color: white;
     flex-flow: row wrap;
-    margin: 20px 10%;
+    margin: 20px 50px;
 }
  
 div.formRow > * {
@@ -172,8 +205,8 @@ div.formRow > * {
 }
 
 #custInfo {
-    margin: 10%;
-    width: 740px;
+    margin: 5% 268px;
+    width: 540px;
 }
  
 form#survey {
@@ -189,27 +222,65 @@ form#survey > fieldset {
     padding: 10px;
     margin: 10px;
 }
- 
- /* Legend Styles */
+
+
+/* Legend Styles */
  
 legend {
     background-color: #0d0d0d;
     color: white;
     padding: 5px;
+    margin-left: 10px;
 }
- 
- /* Text Area Styles */
 
- 
+
+/* Text Area Styles */
+
 textarea {
     margin-top: 10px;
     height: 100px;
     width: 95%;
 }
  
- /* Form Button Styles */
- 
+/* Form Button Styles */
+
 div#buttons {
     text-align: center;
     width: 100%;
+    padding: 5px;
+}
+
+
+/* --------------- Tiers Page Code --------------- */
+
+tr, th, td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 1px solid white;
+}
+
+#bestvalue {
+    color: green;
+    text-decoration: underline;
+}
+
+#bestquality {
+    color: cyan;
+    font-weight: bold;
+}
+
+#empty {
+    background-color: black;
+    border: 1px solid black;
+}
+
+#price {
+    background-color: rgba(255, 161, 161, 0.105)
+}
+
+table {
+    border: 1px solid white;
+    margin: 0 50px 50px;
 }
