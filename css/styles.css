@@ -35,25 +35,25 @@ body {
 /* Header */
 
 header {
-    width: 299px; /* Width of gray rectangle */
+    width: 299px;                   /* Width of gray rectangle */
     display: flex;
-    align-items: center; /* Align logo and text */
-    height: 99px; /* Height of gray box */
-    background-color: #262626; /*Box color */
+    align-items: center;            /* Align logo and text */
+    height: 99px;                   /* Height of gray box */
+    background-color: #262626;    /*Box color */
     padding: 0;
 }
 
 .logo img {
     margin-top: 4px;
-    width: 99.5px; /* Logo width */
-    height: 99.5px; /* Logo height */
+    width: 99.5px;      /* Logo width */
+    height: 99.5px;        /* Logo height */
 }
 
 .crash {
     display: block;
     text-align: center;
     color: white;
-    padding: 39.3px 53.6px; /* Top/bottom right/left */
+    padding: 39.3px 53.6px;     /* Top/bottom right/left */
     text-decoration: none;
 }
 
@@ -78,10 +78,10 @@ nav ul {
 }
 
 nav ul li a {
-    padding: 20px 40px; /* Height x Width - Adjust padding for clickable area */
+    padding: 20px 40px;             /* Height x Width - Adjust padding for clickable area */
     background-color: #262626;
-    color: white; /* Color of text in nav */
-    text-decoration: none; /* Removes bullet points */
+    color: white;                 /* Color of text in nav */
+    text-decoration: none;          /* Removes bullet points */
     display: flex;
     justify-content: center;
     font-family: "Quicksand", sans-serif;
@@ -91,68 +91,6 @@ nav ul li a {
 nav ul li a:hover {
     background: gray;
     color: black;
-}
-
-
-/* Main Area */
-
-#wrapper {
-    width: 1080px;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-#main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 950px;
-    height: auto;
-    padding: 200px 0; /* Main height x width */
-    margin: 25px 64.5px; /* Top, Right, Bottom, Left */
-    color: white;
-    background-color: #3a3a3a;
-}
-
-p {
-    font-family: "Noto Sans JP", sans-serif;
-    font-style: italic;
-}
-
-p2 {
-    font-family: "Noto Sans JP", sans-serif;
-}
-
-h2 {
-    font-size: 1.4em;
-    font-family: "Quicksand", sans-serif;
-    text-align: center;
-    color: white;
-    padding-bottom: 0.5em;
-}
-
-#custInfo > h2 {
-    font-size: 1em;
-    text-align: left;
-    text-decoration: underline;
-    padding: 10px;
-}
-
-h3 {
-    text-align: center;
-    padding: 50px 0 10px 0;
-    color: white;
-    text-decoration: underline;
-    font-family: "Quicksand", sans-serif;
-}
-
-h4 {
-    color: white;
-    text-indent: 30px;
-    font-size: 2em;
 }
 
 
@@ -187,7 +125,115 @@ footer a:hover {
 }
 
 
-/* Forms */
+/* -------------- Home Page Code --------------  */
+
+#wrapper {
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 950px;
+    height: auto;
+    padding: 100px 0;           /* Main height x width */
+    margin: 25px 64.5px;        /* Top, Right, Bottom, Left */
+    color: white;
+    background-color: #3a3a3a;
+}
+
+.vidstyle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 15px;
+    margin-left: 40px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 15px;
+}
+
+.vidstyle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 15px;
+    margin-left: 40px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 15px;
+}
+
+.video {
+    width: 500px;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#vid1headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#disclaimer h5 {
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+/* --------------- Tiers Page Code --------------- */
+
+tr, th, td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 1px solid white;
+}
+
+.bestvalue {
+    color: green;
+    text-decoration: underline;
+}
+
+.bestquality {
+    color: cyan;
+    font-weight: bold;
+}
+
+.empty {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.price {
+    background-color: rgba(255, 0, 0, 0.105)
+}
+
+table {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 50px 50px;
+}
+
+.bv {
+    background-color: rgba(137, 255, 124, 0.233);
+}
+
+.bq {
+    background-color: rgba(115, 225, 255, 0.364);
+}
+
+
+/* --------------- Request and Support Pages Code --------------- */
 
 label, legend {
     font-family: "Quicksand", sans-serif;
@@ -226,11 +272,18 @@ form#survey {
 
 .extras {
     display: flex;
-    justify-content: center;
-    padding: 1px;
+    flex-direction: column;
+    width: 180px;
+    margin-left: 188px;
+    padding: 0 0 10px;
+    word-wrap: normal;
+    font-size: 12pt;
     color: white;
 }
 
+.extrasflex {
+    text-align: left;
+}
 
 /* Legend Styles */
  
@@ -263,44 +316,49 @@ div#buttons {
 }
 
 
-/* --------------- Tiers Page Code --------------- */
+/* --------------- Text Styles and Fonts --------------- */
 
-tr, th, td {
-    padding: 10px;
+p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: italic;
+}
+
+.default {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-family: "Quicksand", sans-serif;
     text-align: center;
     color: white;
-    font-family: "Noto Sans JP", sans-serif;
-    border: 1px solid white;
+    padding-bottom: 0.5em;
 }
 
-#bestvalue {
-    color: green;
+#custInfo > h2 {
+    font-size: 1em;
+    text-align: left;
     text-decoration: underline;
+    padding: 10px;
 }
 
-#bestquality {
-    color: cyan;
-    font-weight: bold;
+h3 {
+    text-align: center;
+    padding: 50px 0 10px 0;
+    color: white;
+    text-decoration: underline;
+    font-family: "Quicksand", sans-serif;
 }
 
-#empty {
-    background-color: rgba(0, 0, 0, 0.50);
-    border: 1px solid rgba(0, 0, 0, 0.50);
+h4 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
 }
 
-#price {
-    background-color: rgba(255, 0, 0, 0.105)
-}
-
-table {
-    border: 1px solid rgb(0, 0, 0);
-    margin: 0 50px 50px;
-}
-
-#bv {
-    background-color: rgba(137, 255, 124, 0.233);
-}
-
-#bq {
-    background-color: rgba(115, 225, 255, 0.364);
+h5 {
+    color: white;
+    text-align: justify;
+    font-family: "Noto Sans JP", sans-serif;
 }
